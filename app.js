@@ -4,6 +4,7 @@ const { body, validationResult } = require('express-validator');
 const socketIO = require('socket.io');
 const qrcode = require('qrcode');
 const http = require('http');
+const fs = require('fs');
 const { phoneNumberFormatter, phoneNumberReformatter } = require('./helpers/formatter');
 const fileUpload = require('express-fileupload');
 const port = process.env.PORT || 8000;
@@ -28,8 +29,6 @@ app.get('/', (req, res) => {
   });
 });
 
-
-
 const client = new Client({
   restartOnAuthFail: true,
   puppeteer: {
@@ -41,29 +40,20 @@ const client = new Client({
       '--disable-accelerated-2d-canvas',
       '--no-first-run',
       '--no-zygote',
-      '--single-process', // <- this one doesn't works in Windows
+      '--single-process', 
       '--disable-gpu'
     ],
   },
   authStrategy: new LocalAuth()
 });
 
-
-
-
 client.initialize();
 
-client.on('message', async msg => {
-  switch (msg) {
-    case "PING":
-      client.sendMessage(msg.from, "Whatsapp Bot Online");
-      break;
-  
-    default:
-      client.sendMessage(msg.from, "Maaf, Bot ini masih dalam pengembangan!.\n*Rido Martupa*");
-      break;
-  }
+client.on('qr', (qr) => {
+  console.log('QR RECEIVED', qr);
 });
+
+
 
 // Socket IO
 io.on('connection', function(socket) {
@@ -97,6 +87,18 @@ io.on('connection', function(socket) {
     client.destroy();
     client.initialize();
   });
+});
+
+client.on('message', async msg => {
+  switch (msg) {
+    case "PING":
+      client.sendMessage(msg.from, "Whatsapp Bot Online");
+      break;
+  
+    default:
+      client.sendMessage(msg.from, "Maaf, Bot ini masih dalam pengembangan!.\n*Rido Martupa*");
+      break;
+  }
 });
 
 
