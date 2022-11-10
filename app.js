@@ -28,8 +28,6 @@ app.get('/', (req, res) => {
   });
 });
 
-
-
 const client = new Client({
   restartOnAuthFail: true,
   puppeteer: {
@@ -48,22 +46,7 @@ const client = new Client({
   authStrategy: new LocalAuth()
 });
 
-
-
-
 client.initialize();
-
-client.on('message', async msg => {
-  switch (msg) {
-    case "PING":
-      client.sendMessage(msg.from, "Whatsapp Bot Online");
-      break;
-  
-    default:
-      client.sendMessage(msg.from, "Maaf, Bot ini masih dalam pengembangan!.\n*Rido Martupa*");
-      break;
-  }
-});
 
 // Socket IO
 io.on('connection', function(socket) {
@@ -99,6 +82,17 @@ io.on('connection', function(socket) {
   });
 });
 
+client.on('message', async msg => {
+  switch (msg) {
+    case "PING":
+      client.sendMessage(msg.from, "Whatsapp Bot Online");
+      break;
+  
+    default:
+      client.sendMessage(msg.from, "Maaf, Bot ini masih dalam pengembangan!.\n*Rido Martupa*");
+      break;
+  }
+});
 
 const checkRegisteredNumber = async function(number) {
   const isRegistered = await client.isRegisteredUser(number);
