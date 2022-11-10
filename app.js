@@ -90,7 +90,6 @@ client.on('message', async msg => {
       break;
   
     default:
-      client.sendMessage(msg.from, "Maaf, Bot ini masih dalam pengembangan!.\n*Rido Martupa*");
       break;
   }
 });
