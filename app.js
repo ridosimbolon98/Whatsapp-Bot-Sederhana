@@ -49,12 +49,6 @@ const client = new Client({
 
 client.initialize();
 
-client.on('qr', (qr) => {
-  console.log('QR RECEIVED', qr);
-});
-
-
-
 // Socket IO
 io.on('connection', function(socket) {
   socket.emit('message', 'Connecting...');
