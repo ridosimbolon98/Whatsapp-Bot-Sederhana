@@ -1,0 +1,7 @@
+POST http://192.168.10.30:8000/kirim_pesan
+Content-Type: application/json
+
+{
+  "nomor": "087834887863",
+  "pesan": "Tes"
+}

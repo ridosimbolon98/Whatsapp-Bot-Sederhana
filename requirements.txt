@@ -1,0 +1,8 @@
+whatsapp-web.js
+express
+express-fileupload
+express-validator
+http
+qrcode
+socket.io
+nodemon
