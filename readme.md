@@ -4,8 +4,8 @@ Hi, this is the implementation example of <a href="https://github.com/pedroslope
 
 Watch the tutorials:
 
-- run npm update whatsapp-web.js`
-- run npm install pm2 -g
+- run `npm update whatsapp-web.js`
+- run `npm install pm2 -g`
 
 ## Important thing!
 
@@ -30,6 +30,21 @@ You can send the message to any contact by using `nomor` and message `pesan`
 - `nomor`: 08*********
 - `pesan`: the message
 
+Content-Type: application/json
+`Method`: POST
 Here the endpoint: `/kirim_pesan`
+
+### Send media to contact
+
+You can send the media to any contact by using `nomor` `url` and caption `caption`
+**Paramaters:**
+
+- `nomor`: "08*********",
+- `url`: "https://cdn.pixabay.com/photo/2016/03/02/13/59/bird-1232416__340.png",
+- `caption`: "Ini adalah caption"
+
+Content-Type: application/json
+`Method`: POST
+Here the endpoint: `/kirim_gambar`
 
 
