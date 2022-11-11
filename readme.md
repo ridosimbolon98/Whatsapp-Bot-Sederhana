@@ -35,12 +35,12 @@ Content-Type: application/json <br>
 Here the endpoint: `/kirim_pesan` <br> <br>
 
 <code>
-POST http://192.168.10.30:8000/kirim_pesan
+POST http://localhost:8000/kirim_pesan
 Content-Type: application/json
 
 {
-  "nomor": "087834887863",
-  "pesan": "Tes"
+  "nomor": "0812345687",
+  "pesan": "Tes Pesan"
 }
 </code>
 
@@ -58,13 +58,13 @@ Content-Type: application/json <br>
 Here the endpoint: `/kirim_gambar` <br> <br>
 
 <code>
-POST http://192.168.10.30:8000/kirim_gambar
+POST http://localhost:8000/kirim_gambar
 Content-Type: application/json
 
 {
-  "nomor": "083842703394",
+  "nomor": "0812345687",
   "url": "https://cdn.pixabay.com/photo/2016/03/02/13/59/bird-1232416__340.png",
-  "caption": "Tes"
+  "caption": "Tes Caption"
 }
 </code>
 
