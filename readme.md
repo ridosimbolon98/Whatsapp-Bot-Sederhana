@@ -35,7 +35,6 @@ Content-Type: application/json <br>
 Here the endpoint: `/kirim_pesan` <br> <br>
 
 ``` js
-<code>
 POST http://localhost:8000/kirim_pesan
 Content-Type: application/json
 
@@ -43,7 +42,6 @@ Content-Type: application/json
   "nomor": "0812345687",
   "pesan": "Tes Pesan"
 }
-</code>
 ```
 ### Send media to contact
 
@@ -58,7 +56,7 @@ Content-Type: application/json <br>
 `Method`: POST <br>
 Here the endpoint: `/kirim_gambar` <br> <br>
 
-<code>
+```
 POST http://localhost:8000/kirim_gambar
 Content-Type: application/json
 
@@ -67,5 +65,5 @@ Content-Type: application/json
   "url": "https://cdn.pixabay.com/photo/2016/03/02/13/59/bird-1232416__340.png",
   "caption": "Tes Caption"
 }
-</code>
+```
 
