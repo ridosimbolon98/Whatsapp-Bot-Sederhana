@@ -34,6 +34,7 @@ Content-Type: application/json <br>
 `Method`: POST <br>
 Here the endpoint: `/kirim_pesan` <br> <br>
 
+``` js
 <code>
 POST http://localhost:8000/kirim_pesan
 Content-Type: application/json
@@ -43,7 +44,7 @@ Content-Type: application/json
   "pesan": "Tes Pesan"
 }
 </code>
-
+```
 ### Send media to contact
 
 You can send the media to any contact by using `nomor` `url` and caption `caption`
