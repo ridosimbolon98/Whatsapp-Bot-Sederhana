@@ -30,9 +30,9 @@ You can send the message to any contact by using `nomor` and message `pesan`
 - `nomor`: 08*********
 - `pesan`: the message
 
-- Content-Type: application/json
-- `Method`: POST
-- Here the endpoint: `/kirim_pesan`
+Content-Type: application/json
+`Method`: POST
+Here the endpoint: `/kirim_pesan`
 
 ### Send media to contact
 
@@ -43,8 +43,8 @@ You can send the media to any contact by using `nomor` `url` and caption `captio
 - `url`: "https://cdn.pixabay.com/photo/2016/03/02/13/59/bird-1232416__340.png",
 - `caption`: "Ini adalah caption"
 
-- Content-Type: application/json
-- `Method`: POST
-- Here the endpoint: `/kirim_gambar`
+\nContent-Type: application/json
+\n`Method`: POST
+\nHere the endpoint: `/kirim_gambar`
 
 
