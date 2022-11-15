@@ -84,13 +84,8 @@ io.on('connection', function(socket) {
 });
 
 client.on('message', async msg => {
-  switch (msg) {
-    case "PING":
+  if (msg.body.toUpperCase() == "PING") {
       client.sendMessage(msg.from, "Whatsapp Bot Online");
-      break;
-  
-    default:
-      break;
   }
 });
 
