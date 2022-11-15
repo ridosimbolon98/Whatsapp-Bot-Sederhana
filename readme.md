@@ -2,6 +2,9 @@
 
 Hi, this is the implementation example of <a href="https://github.com/pedroslopez/whatsapp-web.js">whatsapp-web.js</a>
 
+First of all, delete the folder `.wwebjs_auth`
+- run `rm -rf .wwebjs_auth/`
+
 Watch the tutorials:
 
 - run `npm update whatsapp-web.js`
