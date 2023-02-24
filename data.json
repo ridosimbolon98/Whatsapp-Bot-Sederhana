@@ -1,0 +1,216 @@
+{
+    "data_bot": [
+        {
+            "perintah": "start",
+            "jawaban": "Halo, saya Ucok ada yang bisa dibantu?",
+            "task": ["software", "hardware", "jaringan"]
+        },
+        {
+            "perintah": "software",
+            "jawaban": "Perihal kendala *software*, Maaf ya jadi ga nyaman. Silakan dipilih software apa yg berkendala!",
+            "task": [
+                { "id": "sispro", "title": "sispro" },
+                { "id": "dcms", "title": "dcms" },
+                { "id": "sidia", "title": "sidia" }
+              ]
+        },
+        {
+            "perintah": "hardware",
+            "jawaban": "Perihal kendala *hardware*, Maaf ya jadi ga nyaman. Silakan dipilih hardware apa yg berkendala!",
+            "task": [
+                { "id": "printer", "title": "printer" },
+                { "id": "pc", "title": "pc" },
+                { "id": "monitor", "title": "monitor" }
+              ]
+        },
+        {
+            "perintah": "jaringan",
+            "jawaban": "Perihal kendala *jaringan*, Maaf ya jadi ga nyaman. Silakan dipilih jaringan apa yg berkendala!",
+            "task": [
+                { "id": "LAN", "title": "LAN" },
+                { "id": "BACKUP", "title": "BACKUP" },
+                { "id": "WIFI", "title": "WIFI" }
+              ]
+        },
+        {
+            "perintah": "sispro",
+            "jawaban": "Silakan dipilih modul yang bermasalah",
+            "task": [
+                { "id": "SQL ERROR", "title": "SQL ERROR" },
+                { "id": "NOT RESPONDING", "title": "NOT RESPONDING" },
+                { "id": "DATABASE TIDAK DITEMUKAN", "title": "DATABASE TIDAK DITEMUKAN" }
+              ]
+        },
+        {
+            "perintah": "panduan",
+            "jawaban": "Panduan penggunaan Aplikasi Audit 5R bisa anda lihat melalui link berikut: https://s.id/user_guides",
+            "task": []
+        },
+        {
+            "perintah": "SQL ERROR",
+            "jawaban": "1. PERTAMA PASTIKAN SIDIA BDE SUDAH TERINSTALL DI KOMPUTER ANDA \n2. COBA LAKUKAN UNINSTALL SISPRO, DAN INSTALL ULANG SETUP TERBARU. \n3. JIKA MASIH GAGAL SILAKAN JALANKAN SISPRO DAN KLIK MENU UTAMA, LALU KLIK UBAH ALAMAT JARINGAN. SILAKAN DIUBAH KE 192.168.10.11. SETELAH ITU KLIK MENU UTAMA DAN KLIK CEK JARINGAN. JIKA KELUAR KETERANGAN REPLY UNREACHABLE ATAU REQUEST TIME OUT, SILAKAN PASTIKAN KOMPUTER ANDA SUDAH TERHUBUNG KEJARINGAN.",
+            "task": []
+        },
+        {
+            "perintah": "NOT RESPONDING",
+            "jawaban": "1. BUKA TASK MANAGER, LALU KLIK KANAN PADA APLIKASI SISPRO LALU END TASK.",
+            "task": []
+        },
+        {
+            "perintah": "DATABASE TIDAK DITEMUKAN",
+            "jawaban": "1.  SILAKAN JALANKAN SISPRO DAN KLIK MENU UTAMA, LALU KLIK UBAH ALAMAT JARINGAN. SILAKAN DIUBAH KE 192.168.10.11.",
+            "task": []
+        },
+        {
+            "perintah": "dcms",
+            "jawaban": "Kamus masih dalam tahap pengembangan!",
+            "task": []
+        },
+        {
+            "perintah": "sidia",
+            "jawaban": "Kamus masih dalam tahap pengembangan!",
+            "task": []
+        },
+        {
+            "perintah": "printer",
+            "jawaban": "Kamus masih dalam tahap pengembangan!",
+            "task": []
+        },
+        {
+            "perintah": "pc",
+            "jawaban": "Kamus masih dalam tahap pengembangan!",
+            "task": []
+        },
+        {
+            "perintah": "LAN",
+            "jawaban": "Kamus masih dalam tahap pengembangan!",
+            "task": []
+        },
+        {
+            "perintah": "pagi",
+            "jawaban": "Selamat pagi teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "siang",
+            "jawaban": "Selamat siang teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "malam",
+            "jawaban": "Selamat malam teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "bodat",
+            "jawaban": "Pantek Kau...:\")",
+            "task": []
+        },
+        {
+            "perintah": "anying",
+            "jawaban": "Perkataanmu sungguh terlalu B*dat...:\")",
+            "task": []
+        },
+        {
+            "perintah": "kamu siapa",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "kamu siapa?",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "kau siapa?",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "kau siapa",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "siapa kau",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "siapa kau?",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "siapa namamu?",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "siapa namamu",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "namamu siapa",
+            "jawaban": "Aku Bodat baru...:\")",
+            "task": []
+        },
+        {
+            "perintah": "terimakasih",
+            "jawaban": "Senang bisa membantu mu..",
+            "task": []
+        },
+        {
+            "perintah": "terima kasih",
+            "jawaban": "Sama-sama. Senang bisa membantu mu..",
+            "task": []
+        },
+        {
+            "perintah": "makasih ucok",
+            "jawaban": "Sama-sama. Senang bisa membantu mu..",
+            "task": []
+        },
+        {
+            "perintah": "makasih",
+            "jawaban": "Sama-sama. Senang bisa membantu mu..",
+            "task": []
+        },
+        {
+            "perintah": "halo",
+            "jawaban": "Hai, teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "hai",
+            "jawaban": "Halo, teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "tolong",
+            "jawaban": "Halo, teman. Ada yg bisa dibantu?",
+            "task": []
+        },
+        {
+            "perintah": "help",
+            "jawaban": "Halo, teman. Ada yg bisa dibantu?",
+            "task": [
+                { "id": "panduan", "title": "panduan" },
+                { "id": "tentang", "title": "tentang" },
+                { "id": "jadwal", "title": "jadwal" },
+                { "id": "section", "title": "section" },
+                { "id": "info akun", "title": "info akun" }
+            ]
+        },
+        {
+            "perintah": "assalamualaikum",
+            "jawaban": "Walaikumsalam, teman.",
+            "task": []
+        },
+        {
+            "perintah": "tentang",
+            "jawaban": "Halo, perkenalkan saya *UCOK* asisten robot untuk notifikasi Audit 5R. Saya dibuat oleh Rido Martupa untuk membantu mengirimkan notifikasi penting perihal Sistem Audit 5R. Terima kasih.",
+            "task": []
+        }
+    ]
+}

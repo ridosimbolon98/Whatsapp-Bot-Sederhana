@@ -15,24 +15,24 @@
   "author": "Rido Martupa Simbolon",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
-    "express-validator": "^6.14.2",
+    "express-validator": "^6.9.2",
     "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
-    "qrcode": "^1.5.1",
+    "http": "0.0.1-security",
+    "mime-types": "^2.1.32",
+    "pg": "^8.7.3",
+    "qrcode": "^1.4.4",
     "socket.io": "^2.5.0",
-    "whatsapp-web.js": "^1.18.2"
+    "translate": "^1.4.1",
+    "whatsapp-web.js": "^1.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ridosimbolon98/Whatsapp-Bot-Sederhana.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ridosimbolon98/Whatsapp-Bot-Sederhana/issues"
-  },
-  "homepage": "https://github.com/ridosimbolon98/Whatsapp-Bot-Sederhana#readme"
+    "nodemon": "^2.0.19"
+  }
 }

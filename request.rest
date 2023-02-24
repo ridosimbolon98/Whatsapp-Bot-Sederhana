@@ -1,7 +1,21 @@
-POST http://192.168.10.30:8000/kirim_pesan
+POST http://20.2.87.246:8000/kirim_pesan
 Content-Type: application/json
 
 {
   "nomor": "087834887863",
   "pesan": "Tes"
+}
+
+###
+
+POST http://20.2.87.246:8000/kirim_gambar
+Content-Type: application/json
+
+//083842703394
+//https://i0.wp.com/ceritaihsan.com/wp-content/uploads/2018/02/gambar-lucu.png
+//https://cdn.pixabay.com/photo/2016/03/02/13/59/bird-1232416__340.png
+{
+  "nomor": "082226964001", 
+  "url": "https://i0.wp.com/ceritaihsan.com/wp-content/uploads/2018/02/gambar-lucu.png",
+  "caption": "Kerja Mulu"
 }
